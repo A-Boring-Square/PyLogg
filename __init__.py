@@ -9,7 +9,7 @@ LOG_LEVEL_WARN = logging.WARNING
 
 class LOGGER:
     @staticmethod
-    def init(LoggerName: str, log_level, log_file: str):
+    def __init__(LoggerName: str, log_level, log_file: str):
         # Create a logger object
         logger = logging.getLogger('AppLogger')
         logger.setLevel(log_level)
