@@ -1,8 +1,15 @@
 import logging
 
+LOG_LEVEL_INFO = logging.INFO
+LOG_LEVEL_DEBUG = logging.DEBUG
+LOG_LEVEL_CRIT = logging.CRITICAL
+LOG_LEVEL_ERROR = logging.ERROR
+LOG_LEVEL_WARN = logging.WARNING
+
+
 class LOGGER:
     @staticmethod
-    def init(log_file='app.log', log_level=logging.INFO):
+    def init(LoggerName: str, log_level, log_file: str):
         # Create a logger object
         logger = logging.getLogger('AppLogger')
         logger.setLevel(log_level)
