@@ -11,7 +11,7 @@ class LOGGER:
     @staticmethod
     def __init__(LoggerName: str, log_level, log_file: str):
         # Create a logger object
-        logger = logging.getLogger('AppLogger')
+        logger = logging.getLogger(LoggerName)
         logger.setLevel(log_level)
         
         # Create a file handler for logging to a file
